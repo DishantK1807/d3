@@ -5,8 +5,8 @@
       "stocks": [
         {"ticker": "GE","prob": "90","average": "0.53","std": "2.42"},
         {"ticker": "MCP","prob": "82.2","average": "2.5","std": "6.2"},
-        {"ticker": "Mds","prob": "37.2","average": "5.5","std": "6.2"},
-        {"ticker": "BOOB","prob": "68.0","average": "3.5","std": "9.42"}
+        {"ticker": "TWTR","prob": "37.2","average": "5.5","std": "6.2"},
+        {"ticker": "HFD","prob": "68.0","average": "3.5","std": "9.42"}
       ]
     },
     {
