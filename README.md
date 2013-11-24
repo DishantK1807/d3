@@ -1,4 +1,4 @@
-d3.js Json Scatter Plot
+d3.js json Scatter Plot
 ==
 
 Plot graph using D3.js. 
