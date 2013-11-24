@@ -1,0 +1,75 @@
+@white: #fff;
+@gray: #dbdee0;
+@blue_gray: #eef1f3;
+@blue: #00aeef;
+
+//Transition
+.transition (@type: All, @time: 0.5s, @ease: ease) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  -ms-transition: @arguments;
+  transition: @arguments;
+}
+
+//Transform
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+
+.scale(@ratio:1){
+  .transform(scale(@ratio));
+}
+
+//Opacity
+.opacity (@color,@alpha){
+  @rgba: rgba(red(@color),green(@color),blue(@color),@alpha);
+  @argb: argb(@rgba);
+  background-color: @color;
+  background-color: @rgba;
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+}
+
+//Rounded Corners
+.rounded-corners (@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+//Box Shadow
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+body { font: 12px sans-serif; background: @blue_gray; }
+.clearFix{clear: both;}
+
+.axis path, .axis line {fill: none; stroke: #ccc; shape-rendering: crispEdges; opacity: 1;}
+.axis text { font-size:10px; }
+.circles{ opacity: 0; }
+.tipsy { font-size:11px; margin-top:-10px;}
+.guide line {fill: none; stroke: #ccc; shape-rendering: crispEdges; opacity: 0;}
+.tooltip{padding: 10px; background-color: rgba(0,174,239,.7); color: #363636;}
+
+#chart_container{width: 1144px; max-width: 1144px; margin: 0 auto; background: @white; .rounded-corners(5px); border: 1px solid @gray; padding: 20px;}
+.sidebar{float: left;
+  #market_menu,#stock_list{width: 200px; border: 1px solid @gray; list-style: none; padding: 10px; margin: 0;
+    li{margin: 10px 0; cursor: pointer;
+      &:hover{color: @blue; }
+    }
+  }
+}
+.chart_wrapper{padding: 30px; margin: 0 20px; width: 820px; float: right; border: 1px solid @gray;
+}
+
+

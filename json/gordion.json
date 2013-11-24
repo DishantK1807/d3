@@ -1,0 +1,46 @@
+{
+  "markets": [
+    {
+      "market" : "S&P500",
+      "stocks": [
+        {"ticker": "GE","prob": "90","average": "0.53","std": "2.42"},
+        {"ticker": "MCP","prob": "82.2","average": "2.5","std": "6.2"},
+        {"ticker": "Mds","prob": "37.2","average": "5.5","std": "6.2"},
+        {"ticker": "BOOB","prob": "68.0","average": "3.5","std": "9.42"}
+      ]
+    },
+    {
+      "market" : "BAWSAQ",
+      "stocks": [
+        {"ticker": "MAG","prob": "45","average": "7","std": "2.42"},
+        {"ticker": "AMD","prob": "20","average": "2.5","std": "6.2"}
+      ]
+    },
+    {
+      "market" : "Minerals",
+      "stocks": [
+        {"ticker": "MAG","prob": "10","average": "4","std": "2.42"},
+        {"ticker": "AMD","prob": "75","average": "6","std": "6.2"}
+      ]
+    },
+    {
+      "market" : "LCN",
+      "stocks": [
+        {"ticker": "MAG","prob": "10","average": "4","std": "2.42"},
+        {"ticker": "AMD","prob": "25","average": "8","std": "6.2"},
+        {"ticker": "UFC","prob": "50","average": "1.2","std": "2.42"},
+        {"ticker": "BOB","prob": "85","average": "5.5","std": "6.2"},
+        {"ticker": "JSM","prob": "90","average": "7.1","std": "2.42"},
+        {"ticker": "KDK","prob": "35","average": "23","std": "6.2"},
+        {"ticker": "IEM","prob": "66","average": "4.1","std": "2.42"},
+        {"ticker": "NAN","prob": "38","average": "6.4","std": "6.2"},
+        {"ticker": "ISM","prob": "34","average": "7.2","std": "2.42"},
+        {"ticker": "QIO","prob": "23","average": "8.2","std": "6.2"},
+        {"ticker": "PAS","prob": "55","average": "3.5","std": "2.42"},
+        {"ticker": "TYE","prob": "90","average": "26.9","std": "6.2"},
+        {"ticker": "KGH","prob": "5","average": "1.8","std": "2.42"},
+        {"ticker": "IOA","prob": "19","average": "6","std": "6.2"}
+      ]
+    }
+  ]
+}
