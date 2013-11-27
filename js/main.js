@@ -13,8 +13,6 @@ d3.json(source, function(data) {
 	var circles = svg.selectAll("circle").data(data.markets[0].stocks);
 
 	var create = function(q){
-		// svg.selectAll("circle")
-		// .data(data.markets[q].stocks)
 		circles
 		.enter()
 		.append("circle")

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   	<head>
-    	<title>Trust and Business</title>
+    	<title>d3.js example</title>
     	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
   		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   		<link rel="stylesheet/less" type="text/css" href="less/main.less" />
